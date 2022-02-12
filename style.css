@@ -292,6 +292,118 @@ nav .logo{
     position: relative;
     max-width: 700px;
     margin: 40px auto;
+
+}
+
+.contact{
+    padding: 10px 300px 10px 300px;
+    overflow: hidden;
+}
+.contact h1{
+    text-align: center;
+    background-color: #c589dd;
+    text-transform: uppercase;
+}
+
+.cont{
+    position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.cont:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 700px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+}
+
+
+.contact h2{
+	position: relative;
+	padding: 10px 0 10px;
+	margin-bottom: 10px;
+}
+
+.contact h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #c589dd;
+}
+
+.contact .field{
+	width: 80%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+
+.contact textarea{
+	min-height: 100px;
+}
+
+.contact .btn{
+	width: 20%;
+	padding: .5rem 1rem;
+    margin-bottom: 1rem;
+	background-color: #c589dd;
+	font-size: 1.1rem;
+	cursor: pointer;
+	transition: .3s;
+    border: none;
+}
+
+.contact.btn:hover{
+    background-color: #c589dd;
+}
+
+.contact .insta{
+    text-align: center;
+    background-color: rgb(240, 220, 247);
+    padding: 10px 300px 10px 300px;
+    margin: .5rem;
+}
+.contact .whatasapp{
+    text-align: center;
+    background-color: rgb(240, 220, 247);
+    padding: 10px 300px 10px 300px;
+    margin: .5rem;
+    
+}
+.contact .mail{
+    text-align: center;
+    background-color: rgb(240, 220, 247);
+    padding: 10px 300px 10px 300px;
+    margin: .5rem;
 }
 
 

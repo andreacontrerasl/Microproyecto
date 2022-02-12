@@ -40,3 +40,27 @@ function next(direction){
     sliders[index].classList.add("active");
 }
 
+const enviar = document.getElementsByClassName("contact");
+const name1 = document.getElementById("namedescription");
+const mail1 = document.getElementById("maildescription");
+const phone1 = document.getElementById("phonedescription");
+const message = document.getElementById("mssg");
+const boton = document.getElementById("btnSend");
+
+boton.addEventListener('click', function(e){
+    e.preventDefault();
+
+    const nameValue = name1.value;
+    const mailValue = mail1.value;
+    const phoneValue = phone1.value;
+    const messageValue = message.value;
+
+    if(!nameValue || !mailValue || !phoneValue || !messageValue){
+        alert("Debe de llenar todas las casillas");
+        return;
+    }else{
+        alert("Su solicitud ha sido enviada");
+        return;
+    }
+})
+
