@@ -40,6 +40,28 @@ function next(direction){
     sliders[index].classList.add("active");
 }
 
+const skillsBox = document.getElementById("skillsBox");
+const skl =[{id:1, softw: "Python", porc: "85%"},
+            {id:2, softw: "Java", porc: "70%"},
+            {id:3, softw: "CSS", porc: "45%"},
+            {id:4, softw: "HTML", porc: "45%"},
+            {id:4, softw: "JavaScript", porc: "40%"},]
+
+function Box(skl){
+    let i =0;
+    for(i=0; i<skl.length;i++){
+        skillsBox.innerHTML += `
+        <div class="box">
+            <p>${skl[i].softw}</p>
+            <p>${skl[i].porc}</p>
+            <div class="skill">
+                    <div class = "skill_level" style="width: ${skl[i].porc};"></div>
+                </div>
+        </div>`
+    }
+}
+Box(skl);
+
 const enviar = document.getElementsByClassName("contact");
 const name1 = document.getElementById("namedescription");
 const mail1 = document.getElementById("maildescription");
@@ -63,4 +85,6 @@ boton.addEventListener('click', function(e){
         return;
     }
 })
+
+
 

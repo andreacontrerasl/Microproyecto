@@ -69,9 +69,9 @@ nav .logo{
     background-color: rgb(253, 248, 255);
 }
 
-.slider{
+.container .slider{
     max-width: 700px;
-    margin: 40px auto;
+    margin: 20px auto;
     position: relative;
 
     box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
@@ -197,9 +197,9 @@ nav .logo{
 
 .about .info{
     float: right;
-    padding: 10px;
+    padding: 2em;
     width: 40%;
-    margin: 40px;
+    margin: 2em;
     background-color: rgb(240, 220, 247);
     text-align: justify;
     box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
@@ -435,6 +435,17 @@ nav .logo{
     .nav-bar.active{
         display: flex;
     }
+
+    .about .info{
+        float: right;
+        padding: 10px;
+        width: 40%;
+        margin: 40px;
+        background-color: rgb(240, 220, 247);
+        text-align: justify;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+    }
+
 
 }
 
